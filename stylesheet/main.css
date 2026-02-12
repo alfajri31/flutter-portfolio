@@ -295,4 +295,18 @@ li > a {
   text-decoration: none !important;
 }
 
+.print-screenshot {
+  display: none;
+  width: 100%;
+}
+
+@media print {
+  .figma-preview iframe {
+    display: none !important;
+  }
+  .print-screenshot {
+    display: block !important;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
